@@ -6,8 +6,14 @@ img {
     position: absolute;
     object-fit: cover;
     width: 100vw;
-    height: 100vh;
+    height: 100svh;
     position: absolute;
     z-index: -100;
     filter: blur(0.25rem)
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100svh;
 }

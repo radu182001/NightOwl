@@ -1,15 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap');
+
+:host {
+    --logo-width: 20rem;
+
+    font-family: 'Montserrat', sans-serif;
+    color: #FDF7FD;
+}
+
 .content {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
+
+    height: calc(100svh - 4rem)
 }
 
 .logo {
     object-fit: cover;
     aspect-ratio: 1;
-    width: 500px;
+    width: var(--logo-width);
+    margin-right: calc(var(--logo-width) / -2);
+    z-index: 1;
 }
 
 .info {
@@ -17,13 +29,38 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 1rem;
     color: azure;
-    width: 40rem;
-    height: 22rem;
-    background-color: rgb(85, 22, 93);
+    width: 41rem;
+    height: 28rem;
+    background-color: #9D158F;
     border-radius: 2rem;
-    box-shadow: 0px 100px 200px -100px rgba(16, 16, 26, 0.25),
-    0px 30px 60px -30px rgba(16, 16, 26, 0.25),
-    0px -2px 6px 0px rgba(16, 16, 26, 0.25) inset;
+    line-height: 2.1rem;
+    box-shadow: 0 0 1.5rem 0.2rem black;
+}
+
+.info h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 2.2rem;
+    margin-left: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.info h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-left: 4rem;
+}
+
+.info h3 span {
+    display: block;
+    text-align: center;
+}
+
+app-button {
+    margin-top: 1rem;
+    margin-left: 4rem;
 }

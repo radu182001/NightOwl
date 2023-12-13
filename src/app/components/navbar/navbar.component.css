@@ -1,15 +1,16 @@
+:host {
+    color: #FDF7FD;
+}
+
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: aliceblue; */
+    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
     margin: 0 0;
     padding: 0 3rem;
-}
-
-h3 {
-    color: azure;
-    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    max-height: 3.5rem;
 }
 
 ul {
@@ -22,16 +23,21 @@ ul {
 
 li {
     padding-left: 4rem;
-    color: azure;
-    font-size: 1.2rem;
 }
 
-a {
+.nav-link {
     text-decoration: none;
     color: azure;
+    font-size: 1.4rem;
 }
 
-li:hover{
+.nav-link:hover{
     cursor: pointer;
-    color: rgb(132, 132, 202);
+    color: rgb(199, 187, 201);
+}
+
+.nav-title {
+    text-decoration: none;
+    color: azure;
+    font-size: 2rem;
 }
