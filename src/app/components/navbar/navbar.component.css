@@ -1,0 +1,32 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aliceblue; */
+    margin: 0 0;
+    padding: 0 3rem;
+}
+
+h3 {
+    color: azure;
+    font-size: 1.5rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+li {
+    padding-left: 4rem;
+    color: azure;
+    font-size: 1.2rem;
+}
+
+li:hover{
+    cursor: pointer;
+    color: rgb(132, 132, 202);
+}

@@ -1,0 +1,24 @@
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.logo {
+    object-fit: cover;
+    aspect-ratio: 1;
+    width: 500px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: azure;
+    width: 40rem;
+    height: 20rem;
+    background-color: rgb(46, 46, 93);
+    border-radius: 3rem;
+}
