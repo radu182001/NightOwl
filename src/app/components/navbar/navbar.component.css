@@ -26,6 +26,11 @@ li {
     font-size: 1.2rem;
 }
 
+a {
+    text-decoration: none;
+    color: azure;
+}
+
 li:hover{
     cursor: pointer;
     color: rgb(132, 132, 202);

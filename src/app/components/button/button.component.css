@@ -1,0 +1,17 @@
+button {
+    border-radius: 1.5rem;
+    border-color: rgb(35, 15, 53);
+    border-width: 0.3rem;
+    background-color: rgb(199, 187, 201);
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(35, 15, 53);
+    color: azure;
+    transition: background-color 0.3s;
+}
