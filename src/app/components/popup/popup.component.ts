@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon'
 
 @Component({
-  selector: 'app-login-page',
+  selector: 'app-popup',
   standalone: true,
   imports: [MatIconModule],
-  templateUrl: './login-page.component.html',
-  styleUrl: './login-page.component.css'
+  templateUrl: './popup.component.html',
+  styleUrl: './popup.component.css'
 })
-export class LoginPageComponent {
+export class PopupComponent {
 
 }

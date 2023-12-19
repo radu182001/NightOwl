@@ -2,9 +2,7 @@
 
 :host {
     --logo-width: 20rem;
-
-    font-family: 'Montserrat', sans-serif;
-    color: #FDF7FD;
+    color: var(--clr-text);
 }
 
 .content {
@@ -29,11 +27,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     color: azure;
     width: 41rem;
     height: 28rem;
-    background-color: #9D158F;
+    background-color: var(--clr-primary);
     border-radius: 2rem;
     line-height: 2.1rem;
     box-shadow: 0 0 1.5rem 0.2rem black;
@@ -42,7 +40,8 @@
 .info h1 {
     padding: 0;
     margin: 0;
-    font-size: 2.2rem;
+    font-size: var(--text-big);
+    font-weight: 700;
     margin-left: 4rem;
     margin-bottom: 0.5rem;
 }

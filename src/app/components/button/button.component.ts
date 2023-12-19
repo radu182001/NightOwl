@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-button',
@@ -9,4 +10,9 @@ import { Component } from '@angular/core';
 })
 export class ButtonComponent {
 
+  constructor(private router: Router) {}
+
+  getStarted() {
+    this.router.navigateByUrl('home');
+  }
 }

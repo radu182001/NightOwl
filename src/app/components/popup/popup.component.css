@@ -2,6 +2,7 @@
     position: absolute;
     align-self: center;
 
+    border-radius: 20px;
 }
 
 .popup {
@@ -33,10 +34,10 @@
 .popup input {
     font-size: var(--text-medium);
     color: var(--clr-dark);
-    flex-grow: 1;
 }
 
 .popup input:focus {
+    border-style: none;
     outline: none;
 }
 
@@ -51,8 +52,7 @@
 }
 
 .popup input, 
-.popup button,
-.input-container {
+.popup button {
     width: 100%;
     margin: 0;
     box-sizing: border-box;
@@ -66,6 +66,7 @@
 }
 
 .input-container {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;

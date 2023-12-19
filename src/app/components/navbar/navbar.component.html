@@ -1,8 +1,10 @@
 <nav>
-    <a class="nav-title" routerLink="landing">NightOwl</a>
-    <ul routerLinkActive="active">
-        <li><a class="nav-link" routerLink="login">Login</a></li>
-        <li><a class="nav-link" routerLink="">Register</a></li>
-        <li><a class="nav-link" routerLink="">About us</a></li>
-    </ul>
+  <a class="nav-title" routerLink="landing">NightOwl</a>
+  <ul routerLinkActive="active">
+    <li>
+      <a class="nav-link" (click)="openLogin()">Login</a>
+    </li>
+    <li><a class="nav-link" (click)="openRegister()">Register</a></li>
+    <li><a class="nav-link" routerLink="">About us</a></li>
+  </ul>
 </nav>

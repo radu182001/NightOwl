@@ -2,10 +2,32 @@
 :root {
     margin: 0;
     background-color: black;
+
+    font-family: 'Montserrat', sans-serif;
+
+    --clr-primary: #961389;
+    --clr-text: #FDF7FD;
+    --clr-dark: rgb(15, 0, 15);
+
+    --text-small: 0.7rem;
+    --text-medium: 1.2rem;
+    --text-big: 2rem;
+    --text-huge: 2.5rem;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+html, body { height: 100%; }
+body { margin: 0;}
+
+h1, h2, h3, p {
+    cursor: default;
+}
+
+.custom-popup {
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.backdropBackground {
+    background-color: #00000049;
+    backdrop-filter: blur(4px);
 }
