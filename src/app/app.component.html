@@ -1,0 +1,23 @@
+<img src="../assets/poza NightOwl.PNG" />
+<nav>
+  <a class="nav-title" routerLink="home">NightOwl</a>
+  <ul routerLinkActive="active" *ngIf="!logged">
+      <li>
+      <a class="nav-link" (click)="openLogin()">Login</a>
+      </li>
+      <li><a class="nav-link" (click)="openRegister()">Register</a></li>
+      <li><a class="nav-link" routerLink="">About us</a></li>
+  </ul>
+  <ul routerLinkActive="active" *ngIf="logged">
+    <li><mat-icon (click)="logout()">exit_to_app</mat-icon></li>
+    <li>
+    <a class="nav-link" (click)="addClub()" title="Select a location on the map">Add club</a>
+    </li>
+    <li *ngIf="!favFilter"><a class="nav-link" (click)="getFav()">Show favorites</a></li>
+    <li *ngIf="favFilter"><a class="nav-link" (click)="clearFilters()">Clear filter</a></li>
+    <li><a class="nav-link">Hello, <span>{{user}}</span>!</a></li>
+</ul>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

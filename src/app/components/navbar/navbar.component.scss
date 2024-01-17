@@ -1,0 +1,43 @@
+:host {
+    color: #FDF7FD;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
+    margin: 0 0;
+    padding: 0 3rem;
+    padding-top: 0.5rem;
+    max-height: 3.5rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+li {
+    padding-left: 4rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: azure;
+    font-size: 1.4rem;
+}
+
+.nav-link:hover{
+    cursor: pointer;
+    color: rgb(199, 187, 201);
+}
+
+.nav-title {
+    text-decoration: none;
+    color: azure;
+    font-size: 2rem;
+}

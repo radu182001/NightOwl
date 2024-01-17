@@ -1,0 +1,33 @@
+<div class="popup">
+    <h2>Club Information</h2>
+    <div class="input">
+      <p>Name</p>
+      <div class="input-container">
+        <mat-icon>badge</mat-icon>
+        <input type="text" placeholder="Name" (keyup)="getName($event)"/>
+      </div>
+    </div>
+    <div class="input">
+      <p>Address</p>
+      <div class="input-container">
+        <mat-icon>location_on</mat-icon>
+        <input type="text" placeholder="Address" (keyup)="getAddress($event)"/>
+      </div>
+    </div>
+    <div class="input">
+        <p>Image link</p>
+        <div class="input-container">
+          <mat-icon>image</mat-icon>
+          <input type="text" placeholder="Image link" (keyup)="getImage($event)"/>
+        </div>
+      </div>
+      <div class="input">
+        <p>Description</p>
+        <div class="input-container">
+          <mat-icon>text_snippet</mat-icon>
+          <textarea id="description" name="description" rows="1" cols="50" placeholder="Enter description here" (keyup)="getDesc($event)"></textarea>
+        </div>
+      </div>
+    <button (click)="addClub()">Add club</button>
+</div>
+  

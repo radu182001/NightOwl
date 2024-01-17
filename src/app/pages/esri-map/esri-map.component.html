@@ -1,0 +1,38 @@
+<!-- Here's the DIV that we inject the map into -->
+
+<div fxLayout="row" class="map-container">
+    <div fxFlex="70%" class="map">
+        <div #mapViewNode></div>
+        <div class="overlay" *ngIf="selectingNewClub">
+            Select a point on the map
+        </div>
+    </div>
+    <div fxFlex="30%" fxLayout="column" class="info">
+        <div class="content" *ngIf="isSelected">
+            <img src={{currentPointGraphic?.attributes?.img}} alt="club image">
+            <mat-divider></mat-divider>
+            <h2>{{currentPointGraphic?.attributes?.name}}</h2>
+            <mat-divider></mat-divider>
+            <div class="buttons">
+                <button mat-stroked-button (click)="getRoute()" fxFlex="80%" class="routes">Show route</button>
+                <button mat-icon-button fxFlex="20%">
+                    <mat-icon (click)="addToFav()" *ngIf="!isFav">favorite_border</mat-icon>
+                    <mat-icon (click)="removeFromFav()" *ngIf="isFav">favorite</mat-icon>
+                </button>
+            </div>
+            <mat-divider></mat-divider>
+            <div class="address">
+                <mat-icon>location_on</mat-icon>
+                <p>{{currentPointGraphic?.attributes?.addr}}</p>
+            </div>
+            <mat-divider></mat-divider>
+            <div class="description">
+                <h3>Description</h3>
+                <p>{{currentPointGraphic?.attributes?.desc}}</p>
+            </div>
+        </div>
+        <div class="content" *ngIf="!isSelected">
+            <p>No club selected</p>
+        </div>
+    </div>
+</div>

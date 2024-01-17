@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap');
+
+:host {
+    --logo-width: 20rem;
+    color: var(--clr-text);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    height: calc(100svh - 4rem)
+}
+
+.logo {
+    object-fit: cover;
+    aspect-ratio: 1;
+    width: var(--logo-width);
+    margin-right: calc(var(--logo-width) / -2);
+    z-index: 1;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    color: azure;
+    width: 41rem;
+    height: 28rem;
+    background-color: var(--clr-primary);
+    border-radius: 2rem;
+    line-height: 2.1rem;
+    box-shadow: 0 0 1.5rem 0.2rem black;
+}
+
+.info h1 {
+    padding: 0;
+    margin: 0;
+    font-size: var(--text-big);
+    font-weight: 700;
+    margin-left: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.info h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-left: 4rem;
+}
+
+.info h3 span {
+    display: block;
+    text-align: center;
+}
+
+app-button {
+    margin-top: 1rem;
+    margin-left: 4rem;
+}
+
+button {
+    margin-left: 4rem;
+    border-radius: 1.5rem;
+    border-style: none;
+    background-color: #FDF7FD;
+    width: 11rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    box-shadow: 0.23rem 0.35rem;
+    transition: all 0.2s ease-out;
+}
+
+button:hover {
+    cursor: pointer;
+    translate: 0.23rem 0.35rem;
+    box-shadow: 0 0;
+    transition: all 0.2s ease-out;
+}

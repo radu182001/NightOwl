@@ -1,0 +1,26 @@
+<div class="popup">
+    <h2>Create a new account</h2>
+    <div class="input">
+      <p>Email</p>
+      <div class="input-container">
+        <mat-icon>person</mat-icon>
+        <input type="text" placeholder="Email" (keyup)="getEmail($event)"/>
+      </div>
+    </div>
+    <div class="input">
+      <p>Password</p>
+      <div class="input-container">
+        <mat-icon>vpn_key</mat-icon>
+        <input type="password" placeholder="Password" (keyup)="getPassword($event)"/>
+      </div>
+    </div>
+    <div class="input">
+      <p>Repeat Password</p>
+      <div class="input-container">
+        <mat-icon>vpn_key</mat-icon>
+        <input type="password" placeholder="Repeat Password" (keyup)="getRepeatPassword($event)"/>
+      </div>
+    </div>
+    <button (click)="register()">Sign up</button>
+  </div>
+  

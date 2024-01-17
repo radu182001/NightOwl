@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+
+// @import "~bootstrap/dist/css/bootstrap.min.css";
+
+@import "~@arcgis/core/assets/esri/css/main.css";
+
+/* You can add global styles to this file, and also import other style files */
+:root {
+    margin: 0;
+    background-color: black;
+
+    font-family: 'Montserrat', sans-serif;
+
+    --clr-primary: #9e1b91;
+    --clr-text: #FDF7FD;
+    --clr-dark: rgb(15, 0, 15);
+
+    --text-small: 0.7rem;
+    --text-medium: 1.2rem;
+    --text-big: 2rem;
+    --text-huge: 2.5rem;
+}
+
+html, body { height: 100%; }
+body { 
+    margin: 0;
+}
+
+h1, h2, h3, p {
+    cursor: default;
+}
+
+.custom-popup {
+    padding: 0;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.custom-popup mat-dialog-container{
+    padding: 0;
+}
+
+.backdropBackground {
+    background-color: #00000049;
+    backdrop-filter: blur(4px);
+}
+
+.esri-legend {
+    background-color: var(--clr-primary); /* Change to your preferred color */
+    border: 0.1rem solid var(--clr-text); /* Optional: Add a border */
+    border-radius: 0.5rem; /* Optional: Rounded corners */
+}
+
+.esri-widget__heading {
+    font-size: var(--text-medium);
+    color: var(--clr-text);
+}
+
+.esri-legend__layer-cell--info {
+    font-size: 0.9rem;
+    color: var(--clr-text);
+    padding-left: 0.7rem;
+}
